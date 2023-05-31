@@ -16,4 +16,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-Resize the open window so the displayed button size crosses the 20% width of the window, the overlay will pop up.
+Switch between tabs, the overlay will pop up.
