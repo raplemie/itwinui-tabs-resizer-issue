@@ -1,31 +1,14 @@
 import React from "react";
-import { Button, ButtonGroup } from "@itwin/itwinui-react";
+import { Tabs } from "@itwin/itwinui-react";
+
+const stableLabels = ["A", "B"];
 
 function App() {
   return (
     <>
-      {/* below div is only a visual helper for the 20% width */}
-      <div
-        style={{
-          position: "absolute",
-          width: "20%",
-          height: "100%",
-          borderRight: "1px solid green",
-        }}
-      ></div>
-      <ButtonGroup
-        style={{ width: "20%" }}
-        overflowButton={() => (
-          <Button size="small" styleType="borderless">
-            More
-          </Button>
-        )}
-      >
-        <Button>Long enough button</Button>
-      </ButtonGroup>
+      <Tabs labels={stableLabels} />
       <br />
-      Resize window so the button is more or less than 20% of the window (green
-      line).
+      Switch between tabs, notice the overlay error.
     </>
   );
 }
